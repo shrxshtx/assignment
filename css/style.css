@@ -1,0 +1,365 @@
+/* primary font (outfit) */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* secondary font (figtree) */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+/* global css */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Outfit", sans-serif;
+}
+
+p,
+a,
+span {
+    font-family: "Figtree", sans-serif;
+}
+
+.sticky-head {
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    background-color: #fff;
+    padding: 10px 0px;
+}
+
+.main-fnt {
+    font-family: "Outfit", sans-serif !important;
+}
+
+.scnd-fnt {
+    font-family: "Figtree", sans-serif !important;
+}
+
+
+/* theme colors */
+
+.main-clr {
+    color: #7195A6;
+}
+
+.main-bgclr {
+    background-color: #7195A6;
+}
+
+.scnd-clr {
+    color: #68777D;
+}
+
+.scnd-bgclr {
+    background-color: #F7FAFB;
+}
+
+
+/* common button */
+
+.com-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    width: 100%;
+    max-width: fit-content;
+    color: #fff;
+    white-space: nowrap;
+}
+
+
+/* whatsapp button */
+
+.wp-btn {
+    background: #39b147;
+    color: #fff;
+    border: 0;
+}
+
+.wp-btn:hover {
+    background: #39b147;
+    color: #fff;
+}
+
+
+/* outline button */
+
+.outline-btn {
+    border: 1px solid #7195A6;
+    color: #7195A6;
+}
+
+.outline-btn:hover {
+    background: #7195A6;
+    color: #fff;
+}
+
+
+.scnd-outline-btn {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.scnd-outline-btn:hover {
+    background: #fff;
+    color: #fff;
+}
+
+/* navbar */
+
+.navbar {
+    min-height: 60px;
+}
+
+.navbar .nav-link {
+    color: #29383E;
+    font-size: 15px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #7195A6;
+}
+
+
+/* hero section */
+
+.hero-section {
+    min-height: 540px;
+    background-image: url("../images/hero-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    padding: 50px 0;
+}
+
+.small-title {
+    color: #7195A6;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.small-title span {
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background: #7195A6;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.hero-content h1 {
+    color: #29383E;
+    line-height: 1.05;
+}
+
+.hero-content h1 span {
+    color: #7195A6;
+}
+
+.hero-content p {
+    color: #68777D;
+    font-size: 17px;
+}
+
+.appointment-btn {
+    background: #7195A6;
+    color: #fff;
+    border: 0;
+}
+
+.appointment-btn:hover {
+    background: #7195A6;
+    color: #fff;
+}
+
+
+/* services */
+
+.border,
+.border-end,
+.border-bottom {
+    border-color: #D9E4E8 !important;
+}
+
+
+/* about section */
+
+.about-section {
+    background: #F7FAFB;
+}
+
+.doctor-image {
+    position: relative;
+    margin: 0 15px 15px;
+}
+
+.doctor-image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #B9CDD5;
+    left: -15px;
+    top: 15px;
+    z-index: 0;
+}
+
+.doctor-image img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+}
+
+.section-label {
+    color: #7195A6;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.about-content h2 {
+    color: #29383E;
+    font-size: 36px;
+}
+
+.doctor-title {
+    color: #7195A6;
+    font-weight: 400;
+}
+
+.about-content p {
+    color: #68777D;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 14px;
+}
+
+
+/* location */
+
+.h-500 {
+    height: 500px;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 10px;
+}
+
+
+/* testimonial */
+
+.testimonial-carousel .item {
+    height: 100%;
+}
+
+.testimonial-carousel .owl-stage {
+    display: flex;
+}
+
+.testimonial-carousel .owl-item {
+    display: flex;
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 25px;
+}
+
+.testimonial-carousel .owl-dot span {
+    background: #7195A6 !important;
+}
+
+.testimonial-carousel .owl-dot.active span {
+    background: #68777D !important;
+}
+
+
+/* responsive */
+
+@media (max-width: 991px) {
+
+    .doctor-image {
+        max-width: 500px;
+        margin: 0 auto 25px;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .h-500 {
+            height: 300px;
+            object-fit: cover;
+            object-position: right;
+            border-radius: 10px;
+        }
+
+    .hero-section {
+        min-height: 650px;
+        background-position: 65% center;
+    }
+
+    .border-end {
+        border-right: 0 !important;
+    }
+
+    .hero-content {
+        padding: 50px 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .testimonial-carousel .border-end {
+        border-right: 0 !important;
+    }
+
+    .testimonial-carousel .item {
+        padding: 0 10px;
+    }
+}
+
+
+@media (max-width: 575px) {
+
+    .doctor-image {
+        width: calc(100% - 15px);
+        margin: 0 0 20px 15px;
+    }
+
+    .doctor-image::before {
+        left: -10px;
+        top: 10px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .about-content p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+}
