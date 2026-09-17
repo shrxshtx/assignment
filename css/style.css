@@ -328,7 +328,7 @@ a {
 .location-head>p {
     max-width: 340px;
     color: #68777D;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.8
 }
 
@@ -533,7 +533,7 @@ a {
 .about-content p {
     max-width: 600px;
     color: #68777D;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.9
 }
 
@@ -552,7 +552,7 @@ a {
 
 .testimonial-card p {
     color: #29383E;
-    font: 15px/1.65 "Outfit", sans-serif
+    font: 18px/1.65 "Outfit", sans-serif
 }
 
 .testimonial-user {
@@ -576,7 +576,7 @@ a {
 
 .testimonial-user span {
     color: #68777D;
-    font-size: 12px
+    font-size: 14px
 }
 
 /* Location */
@@ -840,6 +840,11 @@ a {
     .hero-copy h1 {
         font-size: 46px
     }
+
+        .testimonial-card p {
+            color: #29383E;
+            font: 16px/1.65 "Outfit", sans-serif
+        }
 
     .hero-actions,
     .section-heading,
